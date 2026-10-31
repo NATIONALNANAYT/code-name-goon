@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        button {
+            padding: 15px 50px;
+            font-size: 24px;
+            font-weight: bold;
+
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 10px;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1>MY GAME</h1>
+
+        <button onclick="playGame()">PLAY</button>
+    </div>
+
+    <script>
+        function playGame() {
+            window.location.href = "game.html";
+        }
+    </script>
+
+</body>
+</html>
